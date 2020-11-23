@@ -3,53 +3,55 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com" width="74" height="23" alt="Логотип «Pink»">
+        <img src="https://via.placeholder.com/74x23"  alt="Логотип «Pink»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="site-list__item site-list__item--active">
+          <li class="main-nav__item main-nav__item--active">
             <a>
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="main-nav__item">
+            <a href="catalog.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="main-nav__item">
+            <a href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">
               HTML Academy
             </a>
           </li>
         </ul>
       </nav>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden"> Приложение «Pink» — Взгляните на жизнь
       иначе!</h1>
-    <div class="container">
-      <section class="download">
+    <div class=" page-main__wrapper">
+      <div class="container">
+        <p class="page-main__slogan">Взгляните на жизнь иначе!</p>
+      </div>
+    </div>
+      <section class="download__content">
         <h2 class="visually-hidden">
           Загрузка риложения «Pink»
         </h2>
-        <div class="download__content">
-          <p class="download__slogan">Взгляните на жизнь
-            иначе!</p>
+        <div class="container">
           <a class="download__button" href="https://www.apple.com/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
@@ -70,7 +72,6 @@
         <p class="page-main__title">Нам есть, что вам
           предложить!</p>
       </div>
-    </div>
     <section class="advantages">
       <div class="container">
         <h2 class="visually-hidden">Приемущества</h2>
@@ -101,13 +102,13 @@
             </div>
           </blockquote>
           <!-- Не все отзывы есть в макете, заменю, когда будут-->
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item visually-hidden">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </blockquote>
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item visually-hidden">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -150,7 +151,7 @@
                   9,99 USD
                 </span>
               </th>
-            <tr>
+            </tr>
           </theat>
           <tbody>
             <tr>
@@ -175,19 +176,20 @@
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
-      </div>
+  </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+
       <section class="contacts">
+        <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts__list">
           <div class="contacts__item">
             <dt class="contacts__name">Звоните:</dt>
             <dd class="contacts__description">
-              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
             </dd>
           </div>
           <div class="contacts__item">
@@ -203,15 +205,16 @@
             </dd>
           </div>
         </div>
+      </div>
       </section>
-    </div>
-    <div class="map">
+        <div class="map">
       <a class="map__link" href="https://goo.gl/maps/dMyq2NF77656v1Ca6">
-        <img class="map__img" src="#" width="320" height="200" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
-    </div>
-    <a class="page-footer__logo">
-      <img src="#" width="" 145 height="40" alt="Логотип «Pink»">
-    </a>
+        <img class="map__img" src="../img/map-mobile.png" width="320" height="200" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
+      </div>
+      <div class="container">
+      <a class="page-footer__logo">
+      <img src="https://via.placeholder.com/145x40" alt="Логотип «Pink»">
+      </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
@@ -224,11 +227,12 @@
           <a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru">Наш канал на YouTube</a>
         </li>
       </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
+      </div>
+      <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
+      </div>
   </footer>
 </body>
 
