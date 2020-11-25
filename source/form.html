@@ -1,70 +1,75 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML Academy: Пинк</title>
+  <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body class="page__body">
+<body class="page">
 	<header class="page-header">
-		<div class="container">
-			<a class="page-header__logo">
-				<img src="https://via.placeholder.com" width="74" height="23" alt="Логотип «Pink»">
+			<a href="index.html" class="page-header__logo">
+				<img src="https://via.placeholder.com/74x23" alt="Логотип «Pink»">
 			</a>
 			<nav class="main-nav">
 				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 				<ul class="main-nav__list">
-					<li class="site-list__item site-list__item--active">
+					<li class="main-nav__item main-nav__item--active">
 						<a href="index.html">
 							Главная
 						</a>
 					</li>
-					<li class="site-list__item">
+					<li class="main-nav__item">
 						<a href="catalog.html">
 							Фотографии
 						</a>
 					</li>
-					<li class="site-list__item">
+					<li class="main-nav__item">
 						<a>
 							Конкурс
 						</a>
 					</li>
-					<li class="site-list__item">
+					<li class="main-nav__item">
 						<a href="#">
 							HTML Academy
 						</a>
 					</li>
 				</ul>
-			</nav>
-			<section class="page-header__title">
-				<h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-			</section>
-	</header>
-	<main>
+      </nav>
+  </header>
+	<main class="page-main">
+    <h1 class="visually-hidden"> Приложение «Pink» — Взгляните на жизнь
+      иначе!</h1>
+    <div class=" page-main__wrapper">
+      <div class="container">
+        <p class="page-main__slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
+    </div>
 		<section class="form">
 			<div class="container">
 				<h2 class="form__title">Поделитесь своей историей и получите
 					шанс выиграть ценный приз — 1000
 					миль на вашу бонусную карту!</h2>
-				<form class="form" action="https://echo.htmlacademy.ru" method="POST">
-					<div class="form full-name">
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+					<div class="full-name">
 						<p class="full-name__surname">
-							<label for="surname">ФАМИЛИЯ</label>
-							<input id="surname" type="text" name="surname" placeholder="Укажите фамилию *" />
+							<label class="full-name__label" for="surname">ФАМИЛИЯ</label>
+							<input class="full-name__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" />
 						</p>
 						<p class="full-name__name">
-							<label for="name">ИМЯ</label>
-							<input id="name" type="text" name="name" placeholder="Введите ваше имя *" />
+							<label class="full-name__label" for="name">ИМЯ</label>
+							<input class="full-name__input" id="name" type="text" name="name" placeholder="Введите ваше имя *" />
 						</p>
 						<p class="full-name__patronymic">
-							<label for="patronymic">ОТЧЕСТВО:</label>
-							<input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" />
+							<label class="full-name__label" for="patronymic">ОТЧЕСТВО:</label>
+							<input class="full-name__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" />
 						</p>
-					</div>
-					<div class="form progress">
-						<p class="progress__title">Ваши безбашенные
+          </div>
+
+				<div class="progress">
+          <div class="container">
+						<p class="progress__title">Ваши безбашенные<br>
 							достижения в путешествии</p>
 						<ul class="progress__list">
 							<li class="progress__item">
@@ -91,19 +96,22 @@
 								<input class="progress__checkbox visually-hidden" type="checkbox" id="hotel" name="hotel">
 								<label for="hotel">Разгромил отель</label>
 							</li>
-						</ul>
-					</div>
-					<div class="form contacts">
-						<p class="contacts__phone">
-							<label for="phone">НОМЕР ТЕЛЕФОНА</label>
-							<input id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" />
+            </ul>
+          </div>
+				</div>
+				<div class="contacts-form">
+          <div class="container">
+						<p class="contacts-form__phone">
+							<label class="contacts-form__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+							<input class="contacts-form__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" />
 						</p>
-						<p class="contacts__email">
-							<label for="email">АДРЕС ПОЧТЫ</label>
-							<input id="email" type="email" name="email" placeholder="Введите почту *" />
-						</p>
-					</div>
-					<div class="form apps">
+						<p class="contacts-form__email">
+							<label class="contacts-form__label" for="email">АДРЕС ПОЧТЫ</label>
+							<input class="contacts-form__input" id="email" type="email" name="email" placeholder="Введите почту *" />
+            </p>
+          </div>
+				</div>
+					<div class="apps">
 						<p class="apps__title">С каким приложением
 							путешествовали?</p>
 						<ul class="apps__list">
@@ -120,19 +128,21 @@
 								<label for="Android">Windows Phone</label>
 							</li>
 						</ul>
-					</div>
-					<div class="form emotion">
+				</div>
+				<div class="emotion">
+          <div class="container">
 						<p class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
 						<p class="emotion__comment">
-							<textarea rows="5" id="text-letter" name="text-letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-						</p>
-					</div>
+							<textarea class="emotion__comment-extarea" rows="5" id="text-letter" name="text-letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </div>
+				</div>
 					<button class="form__green-button" type="submit">
 						Отправить форму
 					</button>
 					<p class="form__required-fields">* — обязательные поля</p>
-				</form>
-			</div>
+	  </form>
+
 		</section>
 		<div class="modal-form visually-hidden">
 			<div class="container">
@@ -152,7 +162,7 @@
 	</main>
 	<footer class="page-footer">
 		<a href="index.html" class="page-footer__logo">
-			<img src="#" width="" 145 height="40" alt="Логотип «Pink»">
+			<img src="https://via.placeholder.com/145x40" alt="Логотип «Pink»">
 		</a>
 		<div class="page-footer__social social">
 			<ul class="social__list">
