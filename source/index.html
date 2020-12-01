@@ -8,12 +8,12 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body class="page__body">
+<body class="page">
   <header class="page-header">
-      <a class="page-header__logo">
+      <nav class="main-nav">
+        <a class="page-header__logo">
         <img src="https://via.placeholder.com/74x23"  alt="Логотип «Pink»">
       </a>
-      <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -38,20 +38,10 @@
           </li>
         </ul>
       </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden"> Приложение «Pink» — Взгляните на жизнь
-      иначе!</h1>
-    <div class=" page-main__wrapper">
-      <div class="container">
-        <p class="page-main__slogan">Взгляните на жизнь иначе!</p>
-      </div>
-    </div>
       <section class="download__content">
-        <h2 class="visually-hidden">
-          Загрузка риложения «Pink»
-        </h2>
+  <h2 class="visually-hidden">Загрузка риложения «Pink»</h2>
         <div class="container">
+          <p class="download__title">Взгляните на жизнь иначе!</p>
           <a class="download__button" href="https://www.apple.com/app-store/">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
@@ -66,7 +56,9 @@
           </ul>
           <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
+</section>
+  </header>
+  <main class="page-main">
       <div class="page-main__titles">
         <p class="page-main__title">Устали от серости мегаполиса?</p>
         <p class="page-main__title">Нам есть, что вам
@@ -89,6 +81,15 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="effect">
+      <div class="container">
+<p class="effect__title">Эффект на 24 часа!</p>
+<p class="effect__info">Британские ученые провели исследования
+и доказали, что положительный эффект
+от использования приложения длится целые сутки!</p>
+<a class="" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
@@ -127,6 +128,8 @@
         <table class="price__slider">
           <thead>
             <tr>
+              <th class="mobile-price">
+              </th>
               <th class="price__header">
                 <span class="price__type">
                   База
@@ -155,19 +158,22 @@
           </theat>
           <tbody>
             <tr>
-              <td class="price__function">Розовый фильтр</td>
-              <td class="price__function">Розовый фильтр</td>
-              <td class="price__function">Розовый фильтр</td>
+              <td class="price__function mobile-price">Розовый фильтр</td>
+              <td class="price__function desktop-price">Розовый фильтр</td>
+              <td class="price__function desktop-price">Розовый фильтр</td>
+              <td class="price__function desktop-price">Розовый фильтр</td>
             </tr>
             <tr>
-              <td class="price__function">Смайлики</td>
-              <td class="price__function">Смайлики</td>
-              <td class="price__function">Смайлики</td>
+              <td class="price__function mobile-price">Смайлики</td>
+              <td class="price__function desktop-price">Смайлики</td>
+              <td class="price__function desktop-price">Смайлики</td>
+              <td class="price__function desktop-price">Смайлики</td>
             </tr>
             <tr>
-              <td class="price__function">Комментарии</td>
-              <td class="price__function">Комментарии</td>
-              <td class="price__function">Комментарии</td>
+              <td class="price__function mobile-price">Комментарии</td>
+              <td class="price__function desktop-price">Комментарии</td>
+              <td class="price__function desktop-price">Комментарии</td>
+              <td class="price__function desktop-price">Комментарии</td>
             </tr>
           </tbody>
         </table>
@@ -180,11 +186,10 @@
     </section>
   </main>
   <footer class="page-footer">
-
       <section class="contacts">
         <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</p>
         <div class="contacts__list">
           <div class="contacts__item">
             <dt class="contacts__name">Звоните:</dt>
@@ -209,9 +214,13 @@
       </section>
         <div class="map">
       <a class="map__link" href="https://goo.gl/maps/dMyq2NF77656v1Ca6">
-        <img class="map__img" src="../img/map-mobile.png" width="320" height="200" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
+        <img class="map__mobile" src="../img/map-mobile.png" width="320" height="200" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
+      <a class="map__link" href="https://goo.gl/maps/dMyq2NF77656v1Ca6">
+        <img class="map__tablet" src="../img/map-tablet.png" width="660" height="324" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
+        <a class="map__link" href="https://goo.gl/maps/dMyq2NF77656v1Ca6">
+        <img class="map__desktop" src="../img/map-desktop.png" width="1200" height="502" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" /></a>
       </div>
-      <div class="container">
+      <div class="social__wrapper container">
       <a class="page-footer__logo">
       <img src="https://via.placeholder.com/145x40" alt="Логотип «Pink»">
       </a>
