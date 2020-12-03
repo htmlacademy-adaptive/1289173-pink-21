@@ -1,5 +1,21 @@
 .contacts-form {
 margin-bottom:44px;
+
+@media (min-width: @tablet-width){
+order: 2;
+}
+@media (min-width: @desktop-width){
+width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
+.contacts-form__phone,
+.contacts-form__email{
+@media (min-width: @desktop-width){
+width: 370px;
+}
 }
 .contacts-form__label {
 font-weight: normal;
@@ -10,6 +26,9 @@ display: block;
 margin-left: 23px;
 margin-bottom: 17px;
 float: left;
+@media (min-width: @desktop-width){
+order: 1;
+}
 }
 
 .contacts-form__input {

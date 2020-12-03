@@ -1,5 +1,10 @@
 .full-name{
 margin-bottom: 48px;
+@media (min-width: @desktop-width){
+width: 430px;
+padding-top: 95px;
+padding-bottom: 60px;
+}
 }
 
 .full-name__label {
@@ -11,6 +16,10 @@ display: block;
 margin-left: 23px;
 margin-bottom: 17px;
 float: left;
+
+@media (min-width: @tablet-width){
+margin-right: 20px;
+}
 }
 
 .full-name__input{
@@ -25,3 +34,15 @@ width: 100%;
 border: 2px solid #E5E5E5;
 border-radius: 1px;
 }
+
+.full-name__surname,
+.full-name__name,
+.full-name__patronymic{
+@media (min-width: @tablet-width){
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 56px;
+}
+}
+
