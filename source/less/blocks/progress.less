@@ -1,7 +1,16 @@
 .progress {
 background-color: #F2F2F2;
 margin-bottom: 42px;
+@media (min-width: @tablet-width){
+order: 3;
 }
+background-color: #FFFFFF;
+@media (min-width: @desktop-width){
+width: 100%;
+
+}
+}
+
 
 .progress__title {
 display: block;
@@ -20,11 +29,20 @@ margin: 0;
 padding-left: 0;
 list-style: none;
 padding-bottom: 44px;
+@media (min-width: @desktop-width){
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
+}
+
 .progress__item {
 font-weight: normal;
 font-size: 18px;
 line-height: 30px;
 margin-bottom: 47px;
 color: #283645;
+@media (min-width: @desktop-width){
+      width: 260px;
+}
 }
