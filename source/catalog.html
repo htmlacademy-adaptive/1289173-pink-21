@@ -10,7 +10,6 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="container">
       <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/74x23" alt="Логотип «Pink»" />
       </a>
@@ -33,29 +32,19 @@
           </li>
         </ul>
       </nav>
+		<div class="gallery__slogan container">Фотографии<br> пользователей
     </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden"> Приложение «Pink» — Взгляните на жизнь
-      иначе!</h1>
-    <div class=" page-main__wrapper">
-      <div class="container">
-        <p class="page-main__slogan">Фотографии пользователей</p>
-      </div>
-    </div>
     <section class="gallery">
-      <div class="container">
-        <h1 class="gallery__title">
+        <h1 class="gallery__title container">
           Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как
           не хватает ваших?
         </h1>
-      </div>
-      <ul class="gallery__list">
-        <div class="container">
-        <li class="gallery__item top">
-          <a class="gallery__link" href="#">
+      <a class="gallery__link" href="#">
             <img src="https://via.placeholder.com/320x137" alt="Панорама дня" />
           </a>
+          <div class="gallery__item container">
           <div class="gallery__content">
               <p class="gallery__author">Анна</p>
               <span class="gallery__time">(5 минут назад)</span>
@@ -68,7 +57,11 @@
                 <span class="gallary__like-sum">Нравится: 215</span>
               </div>
             </div>
-        </li>
+        </div>
+        <div class="container">
+      <ul class="gallery__list">
+
+
         <li class="gallery__item">
           <a class="gallery__link" href="#">
             <img src="https://via.placeholder.com/280x180" alt="фото пользователя" />
@@ -157,18 +150,15 @@
             </div>
           </div>
         </li>
-        </div>
-      </ul>
 
+      </ul>
+        </div>
     </section>
     <section class="new-publication">
-
         <h2 class="new-publication__title">
           Затмите их всех!Выкладывайте все, что накопилось в телефоне!
         </h2>
-        <div class="new-publication__form-wrapper">
-          <form class="" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="container">
+          <form class="new-publication__form-wrapper" action="https://echo.htmlacademy.ru" method="POST">
             <div class="new-publication__img">
               <img src="https://via.placeholder.com/280x374" alt="Загрузка нового фото" />
             </div>
@@ -191,32 +181,32 @@
               </div>
             </div>
           </form>
-        </div>
-      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
-      <img src="https://via.placeholder.com/145x40" alt="Логотип «Pink»" />
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Наш Twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Наш Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru">Наш канал на YouTube</a>
-        </li>
-      </ul>
+    <div class="social__wrapper container">
+		<a href="index.html" class="page-footer__logo">
+			<img src="https://via.placeholder.com/145x40" alt="Логотип «Pink»">
+		</a>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Наш Twitter</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Наш Фейсбук</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru">Наш канал на YouTube</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<p class="copyright__text">Разработано:</p>
+			<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
-  </footer>
+	</footer>
 </body>
 
 </html>
