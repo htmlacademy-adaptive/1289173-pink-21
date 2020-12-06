@@ -6,11 +6,28 @@ align-items: center;
 text-align: center;
 margin-top:49px;
 margin-bottom:52px;
+
+@media (min-width: @tablet-width) {
+font-size: 18px;
+margin-top: 73px;
+margin-bottom: 78px;
+}
+
+@media (min-width: @desktop-width){
+margin-top: 67px;
+margin-bottom: 75px;
+}
 }
 
 .new-publication__form-wrapper {
 background-color: #F2F2F2;
 padding-top: 20px;
+@media (min-width: @tablet-width){
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 400px;
+grid-gap: 50px;
+}
 }
 
 .new-publication__button-option {
