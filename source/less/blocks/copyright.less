@@ -1,10 +1,24 @@
 .copyright {
-padding-top: 40px;
-padding-bottom: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+@media (min-width: @tablet-width){
+justify-content: flex-end;
+}
+
+@media (min-width: @desktop-width){
+padding-top: 37px;
+}
 }
 
 .copyright__text {
 font-weight: 400;
 font-size: 14px;
 line-height: 18px;
+margin-right: 10px;
+
+@media (min-width: @desktop-width){
+font-size: 18px;
+}
 }

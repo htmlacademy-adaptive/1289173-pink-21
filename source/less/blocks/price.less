@@ -1,8 +1,18 @@
 .price {
 background-color: #F2F2F2;
-padding-top: 127px;
+padding-top: 105px;
 padding-bottom: 49px;
 overflow: hidden;
+
+@media (min-width: @tablet-width){
+padding-top: 94px;
+padding-bottom: 68px;
+}
+
+@media (min-width: @desktop-width){
+padding-top: 153px;
+padding-bottom: 90px;
+}
 }
 
 .price__slider {
@@ -10,6 +20,10 @@ width: 832px;
 position: relative;
 left: 50%;
 transform: translateX(-50%);
+
+@media (min-width: @tablet-width){
+width: 100%;
+}
 }
 
 .price__header {
@@ -23,6 +37,17 @@ font-family: "Open Sans","Arial", sans-serif;
 font-weight: 700;
 font-size: 16px;
 line-height: 30px;
+padding-top: 10px;
+text-transform: uppercase;
+
+@media (min-width: @tablet-width){
+padding-top: 15px;
+}
+
+@media (min-width: @desktop-width){
+font-size: 18px;
+}
+
 }
 
 .price__value {
@@ -30,6 +55,16 @@ display: block;
 font-weight: 300;
 font-size: 18px;
 line-height: 30px;
+padding-bottom: 25px;
+
+@media (min-width: @tablet-width){
+padding-bottom: 5px;
+}
+
+@media (min-width: @desktop-width){
+padding-bottom: 20px;
+font-size: 24px;
+}
 }
 
 .price__function {
@@ -38,8 +73,20 @@ font-size: 18px;
 line-height: 30px;
 color:#283645;
 background-color:#ffffff;
-padding-top: 24px;
-padding-bottom: 24px;
+padding: 13px 18px 14px 22px;
+text-align: left;
+
+@media (min-width: @tablet-width){
+font-weight: normal;
+font-size: 14px;
+line-height: 30px;
+padding: 7px 15px 7px 15px;
+}
+
+@media (min-width: @desktop-width){
+font-size: 18px;
+padding: 15px;
+}
 }
 
 .price__toggles {

@@ -1,10 +1,30 @@
 .social__list {
 display: flex;
+justify-content: center;
+flex-wrap: wrap;
 margin: 0;
 padding-left: 0;
 list-style: none;
-padding-top: 41px;
-padding-bottom: 41px;
+padding-top: 37px;
+padding-bottom: 32px;
+
+@media (min-width: @desktop-width) {
+padding-top: 65px;
+}
+}
+
+.social__item{
+margin: 0 6px;
+}
+
+.social__list a {
+display: flex;
+justify-content: center;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+border-style: solid;
+border-color: rgba(40,54,69, .1);
 }
 
 .social__wrapper{

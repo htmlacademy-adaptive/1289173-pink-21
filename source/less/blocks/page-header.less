@@ -9,16 +9,39 @@ background-size: cover;
 .page-header__logo {
 display:inline-block;
 position: relative;
+width: 74px;
 height: 23px;
-top: 22px;
-margin-bottom: 22px;
 
 @media (min-width: @tablet-width) {
+width: 145px;
 height: 40px;
+padding-left: 20px;
 }
 
-@media (min-width: @desktop-width) {
+@media (max-width: @desktop-width) {
+width: 147px;
 height: 40px;
 }
 }
 
+.page-header__mobile-logo{
+@media (min-width: @tablet-width){
+display: none;
+}
+}
+
+.page-header__tablet-logo{
+@media (max-width: @mobile-width-only){
+display: none;
+}
+
+@media (min-width: @desktop-width){
+display: none;
+}
+}
+
+.page-header__desktop-logo{
+@media (max-width: @desktop-width) {
+display: none;
+}
+}
