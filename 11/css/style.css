@@ -2,18 +2,20 @@
   position: relative;
   max-width: 280px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
+  width: 100%;
 }
 @media (min-width: 660px) {
   .container {
-    max-width: 620px;
-    padding: 0 20px;
+    max-width: 620px ;
+    padding: 0 15px;
   }
 }
 @media (min-width: 960px) {
   .container {
     max-width: 940px;
     padding: 0 40px;
+    margin: 0 auto;
   }
 }
 @font-face {
@@ -57,6 +59,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .page-header__logo {
   display: inline-block;
@@ -160,7 +163,7 @@ a {
 @media (min-width: 960px) {
   .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 940px;
     padding-left: 10px;
@@ -269,7 +272,6 @@ a {
 @media (min-width: 960px) {
   .main-nav__list {
     display: flex;
-    flex-wrap: wrap;
     width: 622px;
     border-top: 0;
   }
@@ -447,7 +449,12 @@ a {
 .advantages {
   background-color: #F2F2F2;
 }
-@media (min-width: 660px) and (max-width: 960px) {
+@media (min-width: 960px) {
+  .advantages__img-mobile {
+    display: none;
+  }
+}
+@media (min-width: 660px) {
   .advantages__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -468,9 +475,9 @@ a {
 }
 @media (min-width: 960px) {
   .advantages__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 68px;
   }
 }
 .advantages__item {
@@ -479,14 +486,20 @@ a {
 @media (min-width: 660px) {
   .advantages__item {
     width: 252px;
-    text-align: center;
     margin-bottom: 35px;
     text-align: left;
   }
 }
 @media (min-width: 960px) {
   .advantages__item {
+    max-width: 252px;
+    text-align: center;
     padding-top: 275px;
+  }
+}
+@media (min-width: 659px) and (max-width: 960px) {
+  .advantages__img-desktop {
+    display: none;
   }
 }
 .advantages__title {
@@ -1320,7 +1333,6 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  background-color: #F2F2F2;
 }
 @media (max-width: 659px) {
   .effect {
@@ -1331,6 +1343,7 @@ a {
 @media (min-width: 960px) {
   .effect {
     padding-bottom: 115px;
+    background-color: #F2F2F2;
   }
 }
 .effect__grid {
