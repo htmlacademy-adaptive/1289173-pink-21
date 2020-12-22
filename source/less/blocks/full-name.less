@@ -1,9 +1,14 @@
 .full-name{
-margin-bottom: 48px;
+margin-bottom: 30px;
+
+@media (min-width: @tablet-width){
+margin-bottom: 25px;
+}
+
 @media (min-width: @desktop-width){
 width: 430px;
-padding-top: 95px;
-padding-bottom: 60px;
+padding-top: 15px;
+
 }
 }
 
@@ -14,10 +19,11 @@ line-height: 30px;
 color: #D22856;
 display: block;
 margin-left: 23px;
-margin-bottom: 17px;
 float: left;
 
 @media (min-width: @tablet-width){
+margin-left: 0;
+margin-bottom: 0;
 margin-right: 20px;
 }
 }
@@ -38,11 +44,27 @@ border-radius: 1px;
 .full-name__surname,
 .full-name__name,
 .full-name__patronymic{
+
 @media (min-width: @tablet-width){
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 56px;
+}
+}
+
+.full-name__surname{
+margin-bottom: 0px;
+
+@media (min-width: @tablet-width){
+margin-bottom: 50px;
+}
+}
+
+.full-name__name{
+margin-bottom: 25px;
+
+@media (min-width: @tablet-width){
+margin-bottom: 50px;
 }
 }
 

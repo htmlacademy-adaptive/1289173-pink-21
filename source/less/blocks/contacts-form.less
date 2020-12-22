@@ -1,31 +1,106 @@
 .contacts-form {
-margin-bottom:44px;
+margin-bottom: 22px;
 
 @media (min-width: @tablet-width){
 order: 2;
+border: 2px solid #E5E5E5;
+border-radius: 1px;
 }
+
 @media (min-width: @desktop-width){
 width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 }
+
+.contacts-form__wrapper{
+
+@media (min-width: @desktop-width){
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding-top: 20px;
+padding-bottom: 5px;
+}
+}
+
+.contacts-form__title--mobile-none{
+@media (max-width:@mobile-width-only){
+display: none;
+}
+
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+color: #D22856;
+
+@media (min-width: @tablet-width){
+display: inline-block;
+position: relative;
+z-index: 2;
+transform: translateY(-50%);
+padding: 0;
+background-color: #ffffff;
+padding-left: 40px;
+padding-right: 40px;
+margin: 0 auto;
+}
+}
+
 .contacts-form__phone,
 .contacts-form__email{
+@media (min-width: @tablet-width){
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: relative;
+padding-left: 60px;
+}
+
 @media (min-width: @desktop-width){
 width: 370px;
+margin: 0;
 }
 }
-.contacts-form__label {
+
+.contacts-form__phone{
+margin-top: 32px;
+
+@media (min-width: @tablet-width){
+margin-top: 25px;
+}
+
+@media (min-width: @desktop-width){
+margin:0;
+}
+}
+
+.contacts-form__email{
+@media (min-width: @desktop-width){
+padding-left: 70px;
+}
+}
+
+.contacts-form label {
 font-weight: normal;
 font-size: 14px;
 line-height: 30px;
 color: #D22856;
 display: block;
 margin-left: 23px;
-margin-bottom: 17px;
+margin-bottom: 7px;
 float: left;
+
+@media (min-width: @tablet-width){
+order: 1;
+margin-left: 18px;
+margin-top: 12px;
+}
+
 @media (min-width: @desktop-width){
 order: 1;
 }
@@ -42,4 +117,8 @@ box-sizing: border-box;
 width: 100%;
 border: 2px solid #E5E5E5;
 border-radius: 1px;
+
+@media (min-width: @tablet-width){
+width: 370px;
+}
 }
