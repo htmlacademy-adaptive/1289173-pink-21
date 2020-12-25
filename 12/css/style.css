@@ -1,9 +1,6 @@
 .container {
-  position: relative;
-  max-width: 280px;
-  margin: 0 auto;
-  padding: 0 15px;
   width: 100%;
+  max-width: 100%;
 }
 @media (min-width: 660px) {
   .container {
@@ -16,6 +13,19 @@
     max-width: 940px;
     padding: 0 40px;
     margin: 0 auto;
+  }
+}
+.container-wrap {
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+@media (min-width: 660px) {
+  .container-wrap {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @font-face {
@@ -1294,10 +1304,10 @@ button {
 }
 .apps {
   background-color: #F2F2F2;
-  width: 100%;
 }
 @media (min-width: 660px) {
   .apps {
+    display: inline-block;
     border: 2px solid #E5E5E5;
     border-radius: 1px;
     margin-top: 25px;
@@ -1308,9 +1318,9 @@ button {
 }
 @media (min-width: 960px) {
   .apps {
+    margin-left: auto;
     width: 430px;
     max-height: 297px;
-    margin-left: 75px;
   }
 }
 .apps__title {

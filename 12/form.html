@@ -62,7 +62,7 @@
           </li>
         </ul>
       </nav>
-        <div class="form__slogan container">Конкурс на самое безбашенное путешествие с Пинк
+        <div class="form__slogan container container-wrap">Конкурс на самое безбашенное путешествие с Пинк
         </div>
   </header>
   <script>
@@ -83,14 +83,18 @@
     </script>
 	<main class="page-main">
 		<section class="form">
-			<div class="container">
+		<div class="container">
+      <div class="container-wrap">
 				<h2 class="form__title">Поделитесь своей историей и получите
 					шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
         <span class="form__hidden-mobile">Пожалуйста, заполните форму ниже:</span>
-      </h2>
-    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        </h2>
+      </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+
 					<div class="full-name">
+            <div class="container-wrap">
 						<p class="full-name__surname">
 							<label class="full-name__label" for="surname">ФАМИЛИЯ</label>
 							<input class="full-name__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" />
@@ -104,8 +108,9 @@
 							<input class="full-name__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" />
 						</p>
           </div>
-
+        </div>
 				<div class="progress">
+          <div class="container-wrap">
 						<p class="progress__title">Ваши безбашенные<br>
 							достижения в путешествии</p>
 						<ul class="progress__list">
@@ -134,10 +139,12 @@
 								<label for="hotel">Разгромил отель</label>
 							</li>
             </ul>
+          </div>
         </div>
 				<div class="contacts-form">
-<p class="contacts-form__title--mobile-none">контактная информация</p>
-<div class="contacts-form__wrapper">
+          <div class="container-wrap">
+            <p class="contacts-form__title--mobile-none">контактная информация</p>
+            <div class="contacts-form__wrapper">
 						<p class="contacts-form__phone">
 							<label class="contacts-form__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
 							<input class="contacts-form__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста" />
@@ -146,9 +153,11 @@
 							<label class="contacts-form__label" for="email">АДРЕС ПОЧТЫ</label>
 							<input class="contacts-form__input" id="email" type="email" name="email" placeholder="Введите почту *" />
             </p>
+            </div>
           </div>
         </div>
 					<div class="apps">
+            <div class="container-wrap">
 						<p class="apps__title">С каким приложением
 							путешествовали?</p>
 						<ul class="apps__list">
@@ -164,20 +173,25 @@
 								<input class="visually-hidden input-radio" type="radio" name="Windows" id="Windows" />
 								<label for="Android">Windows Phone</label>
 							</li>
-						</ul>
+            </ul>
+            </div>
           </div>
 				<div class="emotion">
+          <div class="container-wrap">
 						<p class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
 						<p class="emotion__comment">
 							<textarea class="emotion__comment-textarea" rows="5" id="text-letter" name="text-letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
+          </div>
         </div>
         <div class="form__submit">
+          <div class="container-wrap">
             <button class="form__green-button" type="submit">
 						Отправить форму
 					</button>
           <p class="form__required-fields">* — обязательные поля</p>
           <p class="form__required-fields-desktop">* — обязательные для заполнения поля</p>
+        </div>
         </div>
       </form>
       </div>
