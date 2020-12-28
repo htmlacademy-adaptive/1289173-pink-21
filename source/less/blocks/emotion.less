@@ -1,28 +1,41 @@
 .emotion {
-margin-bottom: 52px;
+margin-bottom: 34px;
 
 @media (min-width: @tablet-width){
 order: 4;
+border: 2px solid #E5E5E5;
+border-radius: 1px;
 }
 
 @media (min-width: @desktop-width){
 width: 100%;
+margin-bottom: 0;
 }
 }
 
 .emotion__title {
 display: block;
 padding-top: 36px;
-padding-bottom: 18px;
 margin: 0;
 font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 text-transform: uppercase;
 color: #D22856;
+
+@media (min-width: @tablet-width){
+display: inline-block;
+    position: relative;
+    z-index: 2;
+    transform: translateY(-50%);
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #FFFFFF;
+}
 }
 
-.emotion__comment-extarea {
+.emotion__comment-textarea {
 display: block;
 box-sizing: border-box;
 font-weight: normal;
@@ -31,7 +44,24 @@ line-height: 30px;
 color: #283645;
 width: 100%;
 margin: 0;
-min-height: 197px;
+height: 200px;
 border: 2px solid #E5E5E5;
 border-radius: 1px;
+padding: 14px 19px;
+
+@media (min-width: @tablet-width){
+padding: 14px 15px;
 }
+
+@media (min-width: @desktop-width){
+min-height: 0;
+height: 127px;
+}
+}
+
+.emotion__comment{
+@media (min-width: @tablet-width){
+padding: 10px 58px 30px;
+}
+}
+
