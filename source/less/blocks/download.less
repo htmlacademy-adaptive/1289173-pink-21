@@ -1,15 +1,48 @@
 .download__content {
 display: block;
 color: #ffffff;
+background-image: url(../img/hand-mobile.png);
+background-position: 0 110px;
+background-size: 318px 286px;
+background-repeat: no-repeat;
+
+@media (min-resolution: 2dppx) {
+background-image: url(../img/hand-mobile@2x.png);
+}
 
 @media (min-width: @tablet-width) {
 display: inline-block;
 display: grid;
 grid-template-columns: 1fr 1fr;
+background-image: url(../img/hand-tablet.png);
+background-position: 0 75px;
+background-size: 660px 545px;
+
+@media (min-resolution: 2dppx) {
+background-image: url(../img/hand-tablet@2x.png);
+}
 }
 
 @media (min-width: @desktop-width){
-padding-bottom: 92px;
+background-image: url(../img/hand-desktop.png);
+background-position: 145px 100px;
+background-size: 1050px 645px;
+
+@media (min-resolution: 2dppx) {
+background-image: url(../img/hand-desktop@2x.png);
+}
+}
+}
+
+.download__content-wrapper{
+@media (min-width: @tablet-width){
+padding-left: 0;
+padding-right: 60px;
+width: 300px;
+}
+
+@media (min-width: @desktop-width){
+padding-left: 75px;
 }
 }
 
@@ -32,6 +65,7 @@ font-size: 40px;
 line-height: 48px;
 padding-top: 94px;
 padding-bottom: 4px;
+padding-right: 20px;
 }
 
 @media (min-width: @desktop-width){
@@ -70,12 +104,15 @@ padding-bottom: 15px;
 
 @media (max-width: @mobile-width-only) {
 background-color: #1D2631;
+}
 
-
+@media (min-width: @tablet-width){
+padding-bottom: 95px;
 }
 
 @media (min-width: @desktop-width){
 width: 300px;
+padding-bottom: 106px;
 }
 }
 
@@ -90,7 +127,7 @@ margin: 38px 0 2px;
 
 @media (min-width: @tablet-width){
 margin: 45px 0 29px;
-margin-left: 7px;
+margin-right: 25px;
 }
 
 @media (min-width: @desktop-width){
@@ -104,7 +141,7 @@ font-weight: 300;
 font-size: 14px;
 line-height: 24px;
 
-@media (min-width: @desktop-width){
+@media (min-width: @tablet-width){
 font-size: 18px;
 }
 }

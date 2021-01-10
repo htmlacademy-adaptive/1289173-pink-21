@@ -5,48 +5,44 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
+
+@media (min-width: @tablet-width) {
+@media (min-resolution: 2dppx) {
+background-image: url("../img/back-mobile@2x.jpg");
+}
+}
 }
 
 .page-header__logo {
 display:inline-block;
 position: relative;
-width: 74px;
-height: 23px;
-top: 10px;
-left: -30px;
+top: 8px;
+left: 7px;
 
+@media (min-width: @tablet-width){
+top: 0;
+left: 20px;
+}
+
+@media (min-width: @desktop-width){
+right: 0;
+right: 10px;
+}
+
+}
+
+.page-header__logo img{
 @media (min-width: @tablet-width) {
+display: block;
 width: 145px;
-height: 40px;
+height: auto;
 top: 0px;
 left: 20px;
 }
 
-@media (max-width: @desktop-width) {
+@media (min-width: @desktop-width) {
 width: 147px;
-height: 40px;
+height: auto;
 left: -5px;
-}
-}
-
-.page-header__mobile-logo{
-@media (min-width: @tablet-width){
-display: none;
-}
-}
-
-.page-header__tablet-logo{
-@media (max-width: @mobile-width-only){
-display: none;
-}
-
-@media (min-width: @desktop-width){
-display: none;
-}
-}
-
-.page-header__desktop-logo{
-@media (max-width: @desktop-width) {
-display: none;
 }
 }
