@@ -56,6 +56,45 @@ order: 1;
 }
 }
 
+.contacts-form__phone::after{
+@media (min-width: @tablet-width){
+content: "";
+position: absolute;
+top: 2px;
+right: 61px;
+width: 60px;
+height: 59px;
+background-color: #e5e5e5;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url("../img/phone-icon.svg") ;
+}
+
+@media (min-width: @desktop-width){
+top: 2px;
+right: 2px;
+}
+}
+
+.contacts-form__email::after{
+  @media (min-width: @tablet-width){
+content: "";
+position: absolute;
+top: 2px;
+right: 61px;
+width: 60px;
+height: 59px;
+background-color: #e5e5e5;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url("../img/mail-icon.svg") ;
+}
+@media (min-width: @desktop-width){
+top: 2px;
+right: 2px;
+}
+}
+
 .contacts__name--email{
 @media (min-width: @desktop-width){
 order: 3;
