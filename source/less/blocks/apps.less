@@ -59,11 +59,23 @@ font-size: 18px;
 line-height: 30px;
 margin-bottom: 45px;
 color: #283645;
-padding-left: 85px;
 
 @media (min-width: @tablet-width){
 padding-left: 115px;
 }
 }
 
+.apps__input-radio+label::before {
+content: "";
+    position: absolute;
+    left: 0;
+    width: 41px;
+    height: 41px;
+    background-image: url(../img/checkbox-radio-on.svg);
+}
+
+
+.apps__input-radio:checked+label::before{
+background-image: url(../img/checkbox-radio-off.svg);
+}
 

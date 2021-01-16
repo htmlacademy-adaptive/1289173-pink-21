@@ -74,7 +74,6 @@ font-size: 18px;
 line-height: 30px;
 margin-bottom: 50px;
 color: #283645;
-padding-left: 55px;
 
 @media (min-width: @tablet-width){
 }
@@ -83,4 +82,22 @@ padding-left: 55px;
 width: 260px;
 padding: 0;
 }
+}
+
+.progress__label{
+  position: relative;
+cursor: pointer;
+display: block;
+}
+
+.progress__checkbox+label::before{
+      content: "";
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/checkbox-off.svg);
+}
+.progress__checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
 }
