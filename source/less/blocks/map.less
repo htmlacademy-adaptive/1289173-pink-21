@@ -1,0 +1,31 @@
+.map{
+position: relative;
+overflow: hidden;
+height: 200px;
+@media (min-width: @tablet-width){
+height: 374px;
+}
+
+@media (min-width: @desktop-width){
+height: 502px;
+}
+}
+
+.map::before {
+content: "";
+position: absolute;
+z-index: 10;
+top: 0;
+left: 0;
+right: 0;
+height: 33px;
+background-image: url(../img/white-footer.svg);
+background-size: 100% 33px;
+background-position: 50% 0;
+background-repeat: no-repeat;
+
+@media (min-width: @tablet-width){
+height: 123px;
+background-size: 100% 123px;
+}
+}

@@ -85,19 +85,43 @@ padding: 0;
 }
 
 .progress__label{
-  position: relative;
 cursor: pointer;
-display: block;
 }
 
-.progress__checkbox+label::before{
-      content: "";
-    position: absolute;
-    left: 0;
-    width: 35px;
-    height: 35px;
-    background-image: url(../img/checkbox-off.svg);
+.progress__checkbox{
+display: inline-block;
+vertical-align: top;
+width: 35px;
+height: 35px;
+border: 2px solid #E5E5E5;
+border-radius: 1px;
+position: relative;
 }
-.progress__checkbox:checked + label::before {
-  background-image: url("../img/checkbox-on.svg");
+
+.progress__checkbox::before {
+content: '';
+position: absolute;
+top: 2px;
+left: 12px;
+width: 10px;
+height: 20px;
+border-right: 2px solid #D22856;
+border-bottom: 2px solid #D22856;
+transform: rotate(45deg);
+display: none;
+}
+
+input:disabled ~ .progress__checkbox {
+border-color: #E5E5E5;
+}
+
+input:hover ~ .progress__checkbox {
+border-color: #283645;
+}
+
+input:active ~ .progress__checkbox {
+border-color: #D22856;
+}
+input:checked ~ .progress__checkbox::before {
+display: block;
 }
