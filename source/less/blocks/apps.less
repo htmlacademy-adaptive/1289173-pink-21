@@ -53,28 +53,51 @@ padding-bottom: 14px;
 }
 }
 
+.apps__label {
+cursor: pointer;
+}
+
+.apps__radio {
+display: inline-block;
+vertical-align: top;
+width: 37px;
+height: 37px;
+border-radius: 50%;
+border: 2px solid #E5E5E5;
+position: relative;
+}
+
+.apps__radio::before {
+content: '';
+position: absolute;
+top: 11px;
+left: 11px;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: #D22856;
+display: none;
+}
+
+input:disabled ~ .apps__radio  {
+border-color: #E5E5E5;
+}
+
+input:hover ~ .apps__radio {
+border-color: #283645;
+}
+
+input:active ~ .apps__radio {
+border-color: #D22856;
+}
+input:checked ~ .apps__radio::before {
+display: block;
+}
+
 .apps__item {
 font-weight: normal;
 font-size: 18px;
 line-height: 30px;
 margin-bottom: 45px;
 color: #283645;
-
-@media (min-width: @tablet-width){
-padding-left: 115px;
-}
-}
-
-.apps__input-radio+label::before {
-content: "";
-    position: absolute;
-    left: 0;
-    width: 41px;
-    height: 41px;
-    background-image: url(../img/checkbox-radio-on.svg);
-}
-
-
-.apps__input-radio:checked+label::before{
-background-image: url(../img/checkbox-radio-off.svg);
 }

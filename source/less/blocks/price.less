@@ -1,11 +1,11 @@
 .price {
-background-color: #F2F2F2;
-padding-top: 105px;
+padding-top: 100px;
 padding-bottom: 49px;
 overflow: hidden;
+background: linear-gradient(171deg,#fff 50%,#f2f2f2 50%);
 
 @media (min-width: @tablet-width){
-padding-top: 94px;
+padding-top: 42px;
 padding-bottom: 68px;
 }
 
@@ -15,11 +15,27 @@ padding-bottom: 90px;
 }
 }
 
+.price-stick__hit{
+position: absolute;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+transform: rotate(-45deg);
+color: var(--basic-white);
+top: 21px;
+left: -27px;
+width: 100px;
+text-align: center;
+background-color: #d22856;
+}
+
 .price__slider {
 width: 832px;
 position: relative;
 left: 50%;
 transform: translateX(-50%);
+border-spacing: 0;
 
 @media (min-width: @tablet-width){
 width: 100%;
@@ -29,6 +45,9 @@ width: 100%;
 .price__header {
 background-color:#283645;
 color: #ffffff;
+position: relative;
+overflow:hidden;
+border: 1px solid #e5e5e5;
 }
 
 .price__type {
@@ -47,7 +66,6 @@ padding-top: 15px;
 @media (min-width: @desktop-width){
 font-size: 18px;
 }
-
 }
 
 .price__value {
@@ -68,19 +86,25 @@ font-size: 24px;
 }
 
 .price__function {
+background-color:#ffffff;
+text-align: left;
+border: 1px solid #e5e5e5;
+}
+
+.price__name{
 font-weight: 300;
-font-size: 18px;
+font-size: 14px;
 line-height: 30px;
 color:#283645;
-background-color:#ffffff;
-padding: 13px 18px 14px 22px;
-text-align: left;
+text-transform: uppercase;
+
 
 @media (min-width: @tablet-width){
 font-weight: normal;
 font-size: 14px;
 line-height: 30px;
-padding: 7px 15px 7px 15px;
+
+text-transform: none;
 }
 
 @media (min-width: @desktop-width){
@@ -90,7 +114,63 @@ padding: 15px;
 }
 
 .price__toggles {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 12px;
+margin-top: 30px;
+margin-bottom: 15px;
+
 @media (min-width: @tablet-width) {
 display: none;
 }
 }
+
+.price__toggles--tablet {
+@media (min-width: @tablet-width){
+display: flex;
+}
+
+@media (min-width: @desktop-width){
+display: none;
+}
+}
+
+.price__desktop {
+display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .desktop {
+    display: block;
+  }
+    td.price__desktop {
+    display: table-cell;
+    max-width: 50px;
+  }
+
+  .price__mobile {
+    display: none;
+  }
+}
+
+.price__yes {
+display: flex;
+width: 31px;
+height: 21px;
+float: right;
+background-color: transparent;
+background-image: url("../img/yes-icon.svg");
+background-repeat: no-repeat;
+}
+
+.price__no {
+  display: flex;
+  width: 27px;
+  height: 27px;
+  float: right;
+  background-color: transparent;
+  background-image: url("../img/no-icon.svg");
+  background-repeat: no-repeat;
+}
+

@@ -1,5 +1,5 @@
 .contacts {
-padding-top: 40px;
+padding-top: 32px;
 padding-bottom: 20px;
 
 @media (min-width: @tablet-width){
@@ -53,6 +53,19 @@ margin-bottom: 47px;
 .contacts__item--call{
 @media (min-width: @desktop-width){
 order: 1;
+}
+}
+
+.contacts-form__input {
+&:hover{
+border: 2px solid #283645;
+border-radius: 1px;
+}
+
+&:focus{
+outline: none;
+border: 2px solid #D22856;
+border-radius: 1px;
 }
 }
 
@@ -134,3 +147,13 @@ line-height: 33px;
 color:#D22856;
 margin: 0;
 }
+
+.contacts__link:hover{
+color:#283645;
+text-decoration-line: underline;
+}
+
+.contacts__link:active{
+color:rgba(40, 54, 69, 0.3);
+}
+

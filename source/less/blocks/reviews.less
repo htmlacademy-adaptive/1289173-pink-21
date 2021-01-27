@@ -1,7 +1,7 @@
 .reviews {
 position: relative;
 padding-top: 23px;
-padding-bottom: 70px;
+padding-bottom: 20px;
 text-align: center;
 
 @media (min-width: @tablet-width){
@@ -52,6 +52,7 @@ line-height: 30px;
 font-weight: 700;
 font-size: 18px;
 line-height: 30px;
+margin-bottom: 15px;
 
 @media (min-width: @tablet-width){
 margin-top: 35px;
@@ -76,4 +77,54 @@ font-size: 14px;
 line-height: 30px;
 margin: 0;
 }
+}
+
+.reviews__toggles{
+display: none;
+
+@media (min-width: @desktop-width){
+display: inline-block;
+position: absolute;
+z-index: 1;
+display: flex;
+top: 50%;
+left: 10px;
+right: 10px;
+}
+}
+
+.reviews__button{
+@media (min-width: @desktop-width){
+position: relative;
+display: inline-block;
+vertical-align: middle;
+box-sizing: border-box;
+padding: 0;
+width: 22px;
+height: 41px;
+border: 0;
+font-style: inherit;
+background-color: transparent;
+cursor: pointer;
+}
+}
+
+.reviews__button--right{
+left: 820px;
+}
+
+.reviews__button--left{
+right: 80px;
+}
+
+
+.reviews__icon{
+fill:rgba(40, 54, 69, 0.3);
+
+    &:hover {
+    fill:rgba(40, 54, 69, 0.6);
+  }
+  &:active{
+    fill:rgba(40, 54, 69, 0.1);
+  }
 }

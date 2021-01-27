@@ -45,6 +45,7 @@ background-color: #283645;
 cursor: pointer;
 border: none;
 padding:0;
+display: none;
 
 @media (min-width: @tablet-width){
 top: 5px;
@@ -175,7 +176,7 @@ text-transform: none;
 color:#D22856;
 
 &:active {
-color: fade(#D22856, 30%);
+color: fade(#FFFFFF, 30%);
 }
 }
 
@@ -191,5 +192,17 @@ margin-right: 85px;
 
 &:last-child {
 margin-right: 0;
+}
+}
+
+.main-nav--link::after{
+@media (min-width: @desktop-width){
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
 }
 }
